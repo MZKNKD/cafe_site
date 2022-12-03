@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  color: #707070;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+.hdn {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+a:not(.no_opacity):hover, .hd_sns li:hover, img:not(#main_pic):hover {
+  opacity: 0.7;
+}
+body::before {
+  content: "";
+  display: block;
+  height: 150px;
+}
+#hd_fixed {
+  height: 150px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+#hd_top {
+  margin-top: 10px;
+  display: flex;
+  width: 1100px;
+  height: 40px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#hd_lang {
+  display: flex;
+  font-size: 12px;
+  padding-right: 20px;
+}
+#hd_lang li {
+  margin-right: 0px;
+}
+#hd_lang li:not(:first-child)::before {
+  content: "|";
+  padding: 0 10px;
+}
+#hd_top ul {
+  display: flex;
+  margin-right: 1px;
+}
+.insta_logo {
+  width: 30px;
+  height: 30px;
+  background: url("../images/insta.svg") no-repeat left center/contain;
+  padding-left: 0;
+  margin-left: 25px;
+}
+.fb_logo {
+  width: 30px;
+  height: 30px;
+  background: url(../images/fb.svg) no-repeat left center/contain;
+  padding-left: 0;
+  margin-left: 25px;
+}
+.tw_logo {
+  width: 30px;
+  height: 30px;
+  background: url(../images/tw.svg) no-repeat left center/contain;
+  padding-left: 0;
+  margin-left: 25px;
+}
+.hd_sns a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#logo_words_set {
+  display: flex;
+  align-content: flex-start;
+}
+
+#hd_main {
+  display: flex;
+}
+#hd_main .hdn {
+  width: 110px;
+  height: 110px;
+  background: url("../images/logo2.svg") no-repeat left center/contain;
+  padding-left: 0;
+  margin-left: 1px;
+  margin-top: -32px;
+}
+#hd_words {
+  margin-left: 15px;
+  margin-top: 25px;
+}
+h1 {
+  font-size: 28px;
+}
+header p {
+  font-size: 12px;
+  padding-left: 5px;
+  margin-bottom: -5px;
+}
+nav {
+  margin-top: -25px;
+  margin-right: 5px;
+}
+nav ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+nav ul li {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+main {
+  position: relative;
+}
+#backimg_shibuya {
+  height: 630px;
+  width: 100%;
+  opacity: 0.14;
+  z-index: 3;
+	position: relative;
+	background-image:
+	linear-gradient(to left, transparent 0%, transparent 70%, #fff 100%),
+	url("../images/shibuya_left.png"),
+	linear-gradient(to right, transparent 0%, transparent 70%, #fff 100%),
+	url("../images/shibuya_right.png");
+	background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+	background-size: 450px,450px,350px,350px;
+	background-position:
+	left calc(50vw - 550px - 300px) bottom 5px,
+	left calc(50vw - 550px - 300px) bottom 5px,
+	left calc(50vw + 520px) bottom 0,
+	left calc(50vw + 520px) bottom 0;
+}
+ 
+/*#left {
+  width: 630px;
+  height: 630px;
+  background-image: url("../images/shibuya_left.png");
+	background-repeat: no-repeat;
+	background-size: 400px;
+	background-position: left calc(50vw - 500px - 300px) top 300px;
+  z-index: 1;
+}
+#right {
+  width: 630px;
+  height: 630px;
+  background-image: url("../images/shibuya_right.png");
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position: right calc(50vw + 500px) top 300px;
+  z-index: 2;
+}*/
+#main_pic {
+  position: relative;
+  margin-top: -630px;
+  z-index: 50;
+  height: 630px;
+}
+h2 {
+  font-size: 20px;
+}
+#container {
+  padding-top: 150px;
+}
+
+#about_us, #menu, #news, #online_shop, #access {
+  margin-top: -150px;
+  padding-top: 150px;
+  width: 100%;
+}
+.hand_writing {
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: .3;
+  padding-left: .5px;
+  margin-top: -5px;
+}
+#center_text {
+  margin-top: 30px;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+}
+a.button {
+  display: block;
+  width: 100px;
+  border: 1px solid #707070;
+  border-radius: 0;
+  background: #fff;
+  padding: .5em .5em;
+  margin: 40px auto 120px auto;
+  font-size: 12px;
+  text-align: center;
+}
+a.button:hover {
+  color: #fff;
+  background: #707070;
+}
+#utensils {
+  width: 150px;
+  height: 150px;
+  background: url("../images/utensils.png") no-repeat left center/contain;
+  padding-left: 0;
+  left: 700px;
+  position: absolute;
+  z-index: -30;
+  top: 1070px;
+  opacity: .15;
+}
+#menu_pics, #shop_items, #access_all {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
+#menu_pics img, #shop_items img {
+  width: 352px;
+  height: 352px;
+  padding-left: 0;
+}
+#news dt {
+  padding: 1rem 0;
+}
+#news dd, #access_container dd {
+  font-weight: 400;
+  margin-top: -3.4rem;
+  padding: 1rem 0 1rem 10rem;
+}
+#roses {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/roses.png");
+	background-repeat: no-repeat;
+	background-size: 150px;
+	background-position: left calc(50vw + 550px) bottom 0;
+  right: 0;
+  position: absolute;
+  bottom: 1100px;
+  opacity: .1;
+}
+#shop_container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+}
+#shop_items {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  justify-content: space-between;
+  }
+
+#shop_words_coffee {
+  z-index: 100;
+  position: absolute;
+  bottom: 15px;
+  left: 393px;
+  color: #fff;
+}
+
+#shop_words_cake {
+  z-index: 100;
+  position: absolute;
+  bottom: 15px;
+  left: 770px;
+  color: #fff;
+}
+#onlineshop_row {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#onlineshop_column {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding-bottom: auto;
+  font-weight: 400;
+}
+#onlineshop_row li {
+  padding-bottom: 1.5rem;
+}
+#onlineshop_row .hand_writing {
+  padding-left: 15px;
+}
+#onlineshop_column .hand_writing {
+  padding-top: 5px;
+  margin-right: -3px;
+}
+
+#coffee_beans {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/coffee_beans.png");
+	background-repeat: no-repeat;
+	background-size: 250px;
+	background-position: left calc(50vw - 700px) bottom 0;
+  left: -100px;
+  position: absolute;
+  bottom: 550px;
+  z-index: 1;
+  opacity: .07;
+}
+#access .main_logo {
+  width: 60px;
+  height: 60px;
+  background: url("../images/logo2.svg") no-repeat left center/contain;
+  padding-left: 0;
+  margin-left: 5px;
+}
+#access_all {
+  display: flex;
+  justify-content: space-between;
+}
+#access_all p {
+  margin-top: 20px;
+}
+#access_container {
+  margin-left: -15px;
+}
+iframe {
+  width: 725px;
+  height: 400px;
+}
+#access ul {
+  display: flex;
+  margin-right: 5px;
+  margin-top: -40px;
+  margin-left: 65px;
+}
+#access dl {
+  margin-top: 20px;
+}
+#access_all dt {
+  padding: .3rem 0;
+  font-weight: bold;
+}
+#access_all dd {
+  margin-top: -1.6rem;
+  padding: 0 0 .5rem 3.5rem;
+}
+#footer_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 130px;
+}
+footer #bird {
+  height: 120px;
+  width: 150px;
+  background: url("../images/bird_with_rose.png") no-repeat left center/contain;
+  margin-top: -80px;
+  margin-right: 50px;
+  padding-right: 0;
+  opacity: 0.15;
+}
+footer #squirrel {
+  height: 80px;
+  width: 130px;
+  background: url("../images/squirrel.png") no-repeat left center/contain;
+  opacity: 0.15;
+}
+#footer_words {
+  margin-top: -4px;
+  border-top: solid #707070 1px;
+  align-items: center;
+  padding: 10px 0;
+}
+/*
+#site_header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+*/
+/*
+header .inner {
+  display: flex;
+  width: 980px;
+  height: 100%;
+	margin: 0 auto;
+  align-items: flex-end;
+}
+
+header #hd_main {
+	display: flex;
+	height: 100%;
+	align-items: flex-end;
+  justify-content: space-between;
+	padding: 1rem;
+}
+
+header #hd_words {
+	margin: 0 auto 0 .5rem;
+}
+
+#hd_lang {
+	display: flex;
+	align-self: flex-start;
+}
+
+nav {
+	min-width: 480px;
+	height: 40px;
+  align-items: flex-end;
+}
+
+nav ul {
+	display: flex;
+	align-self: flex-end;
+}
+
+nav ul li {
+	flex: 1 1 0;
+}
+
+*/
